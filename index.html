@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finna</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #nav {
+            text-align: center;
+            font-size: 14pt;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            /* text-decoration: underline; */
+            font-weight: bolder;
+        }
+        .nav-item {
+            /* transition: 0.1s; */
+            padding: 20px 10px;
+            /* transform: perspective(800px); */
+        }
+        .arrow, .spacer {
+            visibility: hidden;
+        }
+        .nav-item:hover .arrow {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="nav">
+            <a href="https://not-the.github.io/js-pyramid/">
+                <div class="nav-item" id="nav4">
+                    <span class="arrow">&gt; </span>JS Pyramid<span class="spacer"> &lt;</span>
+                </div>
+            </a>
+            <a href="https://not-the.github.io/css-cardflip/">
+                <div class="nav-item" id="nav3">
+                    <span class="arrow">&gt; </span>CSS Cardflip<span class="spacer"> &lt;</span>
+                </div>
+            </a>
+            <a href="https://geolocation.finna.pw">
+                <div class="nav-item" id="nav2">
+                    <span class="arrow">&gt; </span>Geolocation<span class="spacer"> &lt;</span>
+                </div>
+            </a>
+            <a href="https://leapyear.finna.pw">
+                <div class="nav-item" id="nav1">
+                    <span class="arrow">&gt; </span>Leap Year list<span class="spacer"> &lt;</span>
+                </div>
+            </a>
+        </nav>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Mouse position
+        // var mouseX;
+        // var mouseY;
+
+        // // Page elements
+        // const elNav3 = document.getElementById("nav3");
+        // const elNav2 = document.getElementById("nav2");
+        // const elNav1 = document.getElementById("nav1");
+
+        // // Event listeners
+        // elNav1.addEventListener("mouseover", hoverHandler(true, "nav1"));
+
+        // // Hover Handler
+        // function hoverHandler(state, element) {
+        //     console.log("HOVER");
+        // }
+
+        // // Mouse Tracker
+        // onmousemove = function(e) {
+        //     mouseX = e.clientX;
+        //     mouseY = e.clientY;
+        //     elNav1.style.transform = `perspective(800px) translateZ(150px) rotateY(${e.clientX - (window.innerWidth / 2) / 5}deg) rotateX(${e.clientY - (window.innerHeight / 5)}deg)`;
+        // }
+    </script>
+</body>
+</html>
